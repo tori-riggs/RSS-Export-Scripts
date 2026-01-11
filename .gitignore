@@ -2,6 +2,10 @@ __pycache__/feedbin_config.cpython-310.pyc
 __pycache__/feedbin_secret.cpython-310.pyc
 __pycache__/newsblur_config.cpython-310.pyc
 newsblur_config.py
+feedbin_config.py
 .vscode/settings.json
 feedbin_secret.py
 feedbin_feeds.txt
+feedbin_config.py
+feedbin_config.py
+.vscode/launch.json
