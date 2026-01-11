@@ -1,4 +1,6 @@
 import requests
+import sys
+import argparse
 import json
 import os
 import time
@@ -59,6 +61,8 @@ def write( feed_id, title, start, end ):
         f.write(json.dumps(all_data, indent=4, ensure_ascii=False))
 
 def main():
-    read_file("feedbin_config.txt")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-o", "--output", help="Output path directory")
+    read_file("feedbin_feeds.txt")
 
 main()

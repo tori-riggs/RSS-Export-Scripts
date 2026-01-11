@@ -4,4 +4,4 @@ __pycache__/newsblur_config.cpython-310.pyc
 newsblur_config.py
 .vscode/settings.json
 feedbin_secret.py
-feedbin_config.txt
+feedbin_feeds.txt

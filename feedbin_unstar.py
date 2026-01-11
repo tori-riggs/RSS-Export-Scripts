@@ -68,7 +68,7 @@ def write( feed_id, title, start, end ):
 
 
 def main():
-    read_file("feedbin_config.txt")
+    read_file("feedbin_feeds.txt")
 
 
 main()
