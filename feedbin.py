@@ -5,7 +5,8 @@ import json
 import os
 import time
 from datetime import datetime
-from feedbin_secret import username, password, path
+from feedbin_secret import username, password
+from feedbin_config import path, feeds
 
 session = requests.Session()
 session.auth = (f"{username}", f"{password}")
@@ -25,7 +26,7 @@ def read_file(filename):
                 write(feed_id, title, start, end)
 
 
-def write( feed_id, title, start, end ):
+def write(feed_id, title, start, end):
     end = end + 1 # inclusive end
     all_data = []
     print(f"\nExporting: '{title}' (pages {start} - {end})")
@@ -61,8 +62,15 @@ def write( feed_id, title, start, end ):
         f.write(json.dumps(all_data, indent=4, ensure_ascii=False))
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-o", "--output", help="Output path directory")
-    read_file("feedbin_feeds.txt")
+    parser = argparse.ArgumentParser(prog="feedbin.py")
+    parser.add_argument("-o", "--output", help="Output path directory", action='store', default=path)
+    parser.add_argument("-c", "--config", help="Path to config file", default="feedbin_config.py")
+    parser.add_argument("-f", "--feeds", help="Path to list of feeds", default=feeds)
+    args = parser.parse_args()
+    print(args.output)
+    print(args.config)
+    print(args.feed)
+    read_file(args.config)
+    read_file(args.feeds)
 
 main()

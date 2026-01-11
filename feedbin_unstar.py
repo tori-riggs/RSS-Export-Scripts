@@ -3,7 +3,8 @@ import json
 import os
 import time
 from datetime import datetime
-from feedbin_secret import username, password, path
+from feedbin_secret import username, password
+from feedbin_config import path, feeds
 
 session = requests.Session()
 session.auth = (f"{username}", f"{password}")
