@@ -7,3 +7,4 @@ feedbin_secret.py
 feedbin_feeds.txt
 .vscode/launch.json
 feedbin_config.py
+/Export/
