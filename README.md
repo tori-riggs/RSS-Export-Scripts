@@ -2,8 +2,10 @@ A script to export my RSS articles into a JSON. Supports Newsblur and Feedbin bu
 
 # Roadmap
 
-* Proper terminal interface
-* Switching between unstarring and exporting.
-* Supporting feed id arguments.
+* Proper terminal interaction with arguments
 * Default config settings.
-* Switching between Feedbin and Newsblur
+* Config files that contain arguments
+* Switching between unstarring and exporting.
+* Support for starring feeds.
+* Supporting feed id arguments.
+* (Low priority) Switching between Feedbin and Newsblur
