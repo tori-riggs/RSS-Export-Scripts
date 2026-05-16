@@ -7,10 +7,10 @@ A script to export my RSS articles into a JSON. Supports Newsblur and Feedbin bu
 * If feed was already exported, have a choice between overwriting or making a new file
 * Verbose mode
 * Default config settings
-** `--use_defaults`
+    * `--use_defaults`
 * Config files that contain arguments and settings
-** `--no_config` argument
-** Custom output titles
+    * `--no-config` argument
+    * Custom output titles
 * Switching between unstarring and exporting.
 * Support for starring feeds.
 * Automatically create files like config or secret if they do not exist
